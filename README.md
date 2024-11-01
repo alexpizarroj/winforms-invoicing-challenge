@@ -40,6 +40,9 @@ ejecutarlo, primero instala [.NET 8](https://dotnet.microsoft.com/en-us/download
 luego ejecuta en una terminal:
 
 ```shell
+dotnet tool install --global dotnet-ef
+dotnet ef --project InvoiceServiceMock database update
+
 dotnet restore
 dotnet build
 dotnet run --project InvoiceServiceMock --urls=http://localhost:5050/
